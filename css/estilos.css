@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -87,4 +89,93 @@ header .banner .foto img {
     vertical-align: top;
     border-radius: 100%;
     border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+/* ------ Acerca de ------ */
+.main .acerca-de {
+    text-align: center;
+}
+
+.main .acerca-de .texto {
+    margin: 40px auto 60px auto;
+    width: 80%;
+    font-size: 1em;
+    line-height: 30px;
+}
+
+.main .acerca-de .texto .titulo {
+    font-weight: 300;
+    font-size: 34px;
+    color: #748CAB;
+    margin-bottom: 40px;
+}
+
+.main .acerca-de .texto p {
+    font-weight: 600;
+}
+
+/* ------ Trabajos ------ */
+.main .trabajos {
+    background-color: #f2f2f2;
+    padding: 30px 0;
+}
+
+.main .trabajos .contenedor {
+    overflow: hidden;
+}
+
+.main .trabajos .titulo {
+    font-weight: 300;
+    font-size: 34px;
+    color: #353B3C;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main .trabajos .contenedor__trabajos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main .trabajos .contenedor__trabajos .trabajo {
+    width: 23%;
+    margin-bottom: 40px;
+}
+
+.main .trabajos .contenedor__trabajos .trabajo .thumb {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main .trabajos .contenedor__trabajos .trabajo .thumb img {
+    width: 100%;
+    vertical-align: top;
+    border-radius: 3px;
+}
+
+.main .trabajos .contenedor__trabajos .trabajo .descripcion {
+    text-align: center;
+}
+
+.main .trabajos .contenedor__trabajos .trabajo .descripcion .nombre {
+    font-weight: 700;
+    color: #e63946;
+    margin-bottom: 5px;
+}
+
+.main .trabajos .contenedor__trabajos .trabajo .descripcion .categoria {
+    font-size: 0.9em;
+    color: #636363;
+}
+
+/* ------ Footer ------ */
+footer {
+    background-color: #343233;
+    padding: 20px;
+}
+
+footer .texto {
+    color: white;
 }
