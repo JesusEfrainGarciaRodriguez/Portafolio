@@ -106,7 +106,7 @@ header .banner .foto img {
 .main .acerca-de .texto .titulo {
     font-weight: 300;
     font-size: 34px;
-    color: #748CAB;
+    color: #e76f51;
     margin-bottom: 40px;
 }
 
@@ -169,6 +169,62 @@ header .banner .foto img {
     font-size: 0.9em;
     color: #636363;
 }
+
+/* ------ Tecnologías ------ */
+.main .tecnologias {
+    /* background-color: rgb(170, 34, 34); */
+    width: 100%;
+    padding: 30px 0;
+}
+
+.main .tecnologias .contenedor {
+    overflow: hidden;
+}
+
+.main .tecnologias .titulo {
+    font-weight: 300;
+    font-size: 34px;
+    color: #353B3C;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main .tecnologias .contenedor__tecnologias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main .tecnologias .contenedor__tecnologias .tecnologia {
+    width: 25%;
+    margin-bottom: 40px;
+}
+
+.main .tecnologias .contenedor__tecnologias .tecnologia .thumb {
+    width: 100%;
+    vertical-align: top;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.main .tecnologias .contenedor__tecnologias .tecnologia .thumb img {
+    width: 100px;
+    height: 100px;
+    vertical-align: top;
+    border-radius: 3px;
+}
+
+.main .tecnologias .contenedor__tecnologias .tecnologia .nombre {
+    text-align: center;
+    font-weight: 700;
+    color: #e63946;
+    margin-bottom: 5px;
+}
+
+
+
 
 /* ------ Footer ------ */
 footer {
