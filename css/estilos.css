@@ -172,7 +172,6 @@ header .banner .foto img {
 
 /* ------ Tecnologías ------ */
 .main .tecnologias {
-    /* background-color: rgb(170, 34, 34); */
     width: 100%;
     padding: 30px 0;
 }
@@ -228,10 +227,47 @@ header .banner .foto img {
 
 /* ------ Footer ------ */
 footer {
-    background-color: #343233;
-    padding: 20px;
+    background-color: #161a1d;
+    padding: 40px 0;
 }
 
 footer .texto {
     color: white;
+}
+
+footer .contenedor__redes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .contenedor__redes .red {
+    text-align: center;
+    padding: 0px 10px;
+
+}
+
+footer .contenedor__redes .red a {
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    font-size: 40px;
+    padding: 15px 0;
+    display: block;
+    margin: 0 20px;
+    border-radius: 3px;
+}
+
+footer .contenedor__redes .red .twitter:hover {
+    background-color: #00acee;
+}
+
+footer .contenedor__redes .red .facebook:hover {
+    background-color: #3b5998;
+}
+
+footer .contenedor__redes .red .github:hover {
+    background-color: #24292e;
 }
