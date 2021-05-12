@@ -37,7 +37,7 @@ header .menu a {
     display: inline-block;
     text-decoration: none;
     border-bottom: 2px solid transparent;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 header .menu a:hover {
@@ -68,12 +68,12 @@ header .contenedor__texto .texto h2 {
 
 header .contenedor__texto .texto .nombre {
     margin-bottom: 10px;
-    font-size: 50px;
+    font-size: 3.125em;
     line-height: 50px
 }
 
 header .contenedor__texto .texto .profesion {
-    font-size: 25px;
+    font-size: 1.5625em;
     line-height: 25px
 }
 
@@ -105,7 +105,7 @@ header .banner .foto img {
 
 .main .acerca-de .texto .titulo {
     font-weight: 300;
-    font-size: 34px;
+    font-size: 2.125em;
     color: #e76f51;
     margin-bottom: 40px;
 }
@@ -126,7 +126,7 @@ header .banner .foto img {
 
 .main .trabajos .titulo {
     font-weight: 300;
-    font-size: 34px;
+    font-size: 2.125em;
     color: #353B3C;
     text-align: center;
     margin-bottom: 40px;
@@ -182,7 +182,7 @@ header .banner .foto img {
 
 .main .tecnologias .titulo {
     font-weight: 300;
-    font-size: 34px;
+    font-size: 2.125em;
     color: #353B3C;
     text-align: center;
     margin-bottom: 40px;
@@ -230,7 +230,7 @@ header .banner .foto img {
 
 .main .contacto .titulo {
     font-weight: 300;
-    font-size: 34px;
+    font-size: 2.125em;
     color: #e63946;
     text-align: center;
     margin-bottom: 40px;
@@ -249,8 +249,9 @@ header .banner .foto img {
     border-radius: 5px;
     padding: 15px 20px;
     background-color: white;
-    font-size: 20px;
+    font-size: 1.25em;
     outline: none;
+    line-height: 0;
 }
 
 .main .contacto .formulario input[type="text"]:focus,
@@ -279,19 +280,18 @@ header .banner .foto img {
 .main .contacto .formulario input[type="submit"]{
     margin: auto;
     margin-bottom: 20px;
-    width: 20%;
-    background-color: white;
+    width: 30%;
+    background-color: #e63946;
+    color: white;
     border-radius: 5px;
-    border: 2px solid rgb(118, 118, 118);
+    border: 2px solid white;
     padding: 15px 0;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .main .contacto .formulario input[type="submit"]:hover {
-    background-color: #3b5998;
-    color: white;
-    border: 2px solid white;
+    background-color: #cf3642;
 }
 
 /* ------ Footer ------ */
@@ -315,14 +315,13 @@ footer .contenedor__redes {
 footer .contenedor__redes .red {
     text-align: center;
     padding: 0px 10px;
-
 }
 
 footer .contenedor__redes .red a {
     color: #fff;
     text-align: center;
     width: 100px;
-    font-size: 40px;
+    font-size: 2.5rem;
     padding: 15px 0;
     display: block;
     margin: 0 20px;
@@ -339,4 +338,34 @@ footer .contenedor__redes .red .facebook:hover {
 
 footer .contenedor__redes .red .github:hover {
     background-color: #24292e;
+}
+
+/* ------ Media queries ------ */
+@media screen and (max-width: 800px) {
+    .main .trabajos .contenedor__trabajos .trabajo {
+        width: 30%;
+    }
+    .main .contacto .formulario input[type="text"],
+    .main .contacto .formulario input[type="email"] {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main .trabajos .contenedor__trabajos .trabajo {
+        width: 49%;
+    }
+    .main .tecnologias .contenedor__tecnologias .tecnologia {
+        width: 49%;
+    }
+    header .contenedor__texto .texto .nombre {
+        font-size: 3em;
+    }
+    
+    header .contenedor__texto .texto .profesion {
+        font-size: 1.5em;
+    }
+    body {
+        font-size: 14px;
+    }
 }
