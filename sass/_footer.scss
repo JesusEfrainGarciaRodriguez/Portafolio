@@ -1,0 +1,37 @@
+footer {
+    background-color: #161a1d;
+    padding: 40px 0;
+    .texto {
+        color: white;
+    }
+    .contenedor__redes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .red {
+            text-align: center;
+            padding: 0px 10px;
+            a {
+                color: #fff;
+                text-align: center;
+                width: 100px;
+                font-size: 2.5rem;
+                padding: 15px 0;
+                display: block;
+                margin: 0 20px;
+                border-radius: 3px;
+            }
+            .twitter:hover {
+                background-color: #00acee;
+            }
+            .facebook:hover {
+                background-color: #3b5998;
+            }
+            .github:hover {
+                background-color: #24292e;
+            }
+        }
+    }
+}

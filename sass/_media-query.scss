@@ -1,0 +1,32 @@
+@media screen and (max-width: 800px) {
+    .main {
+        .trabajos .contenedor__trabajos .trabajo {
+            width: 30%;
+        }
+        .contacto .formulario {
+            input[type="text"], input[type="email"] {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+    .main .trabajos .contenedor__trabajos .trabajo {
+        width: 49%;
+    }
+    .main .tecnologias .contenedor__tecnologias .tecnologia {
+        width: 49%;
+    }
+    header .contenedor__texto .texto {
+        .nombre {
+            font-size: 3em;
+        }
+        .profesion {
+            font-size: 1.5em;
+        }
+    }
+}

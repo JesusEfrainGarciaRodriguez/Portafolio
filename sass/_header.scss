@@ -1,0 +1,64 @@
+header {
+    background: url("../img/BG7.jpg") #e9606a;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: 600px;
+    
+    .menu {
+        margin: 40px 0;
+        text-align: center;
+        a {
+            margin: 0 20px;
+            color: white;
+            padding-bottom: 9px;
+            display: inline-block;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            font-size: 1.2em;
+            &:hover {
+                border-bottom: 2px solid white;
+            }
+        }
+    }
+
+    .contenedor__texto {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 10px;
+        .texto {
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 3px;
+            display: inline-block;
+            text-align: center;
+            padding: 20px 60px;
+            h1,h2 {
+                color: white;
+                font-weight: 300;
+                margin: 0;
+            }
+            .nombre {
+                margin-bottom: 10px;
+                font-size: 3.125em;
+                line-height: 50px
+            }
+            .profesion {
+                font-size: 1.5625em;
+                line-height: 25px
+            }
+        }
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 139px 0;
+        .foto,img {
+            vertical-align: top;
+            border-radius: 100%;
+            border: 3px solid rgba(255, 255, 255, 0.5);
+        }
+    }
+}
