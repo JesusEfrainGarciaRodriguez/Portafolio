@@ -19,7 +19,7 @@ body {
 }
 
 header {
-  background: url("../img/BG7.jpg") #e9606a;
+  background: url("../img/bg.jpg") #e9606a;
   background-position: center;
   background-repeat: no-repeat;
   max-height: 600px;
@@ -449,4 +449,41 @@ footer .contenedor__redes .red .github:hover {
   header .contenedor__texto .texto .profesion {
     font-size: 1.5em;
   }
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
 }

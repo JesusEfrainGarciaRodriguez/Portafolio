@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Efrain Garcia</title>
-
+    <link rel="shortcut icon" href="img/logo.png">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -64,7 +64,7 @@
                 <div class="contenedor__trabajos">
 
                     <div class="trabajo">
-                        <div class="thumb" onclick="abrirModal('modal1')">
+                        <div class="thumb" onclick="abrirModal('modal1')" class="">
                             <img src="img/trabajos/1.jpg" alt="Sistema de bitácoras">
                         </div>
                         <div class="descripcion">
@@ -72,7 +72,7 @@
                             <p class="categoria">HTML5, CSS3, Bootstrap, JavaScript, Flask, MySQL</p>
                         </div>
                         <!-- Modal -->
-                        <div id="modal1" class="modal" onclick="cerrarModal('modal1')">
+                        <div id="modal1" class="modal animated fadeIn fast" onclick="cerrarModal('modal1')">
                             <div class="modal-content">
                                 <span onclick="cerrarModal('modal1')" class="close">&times;</span>
                                 <video src="img/trabajos/1.mp4" controls muted preload="none"></video>
@@ -89,7 +89,7 @@
                             <p class="categoria">Angular, Bootstrap, Django Rest Framework, MySQL</p>
                         </div>
                         <!-- Modal -->
-                        <div id="modal2" class="modal" onclick="cerrarModal('modal2')">
+                        <div id="modal2" class="modal animated fadeIn fast" onclick="cerrarModal('modal2')">
                             <div class="modal-content">
                                 <span onclick="cerrarModal('modal2')" class="close">&times;</span>
                                 <video src="img/trabajos/2.mp4" controls muted preload="none"></video>
