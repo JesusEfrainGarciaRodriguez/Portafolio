@@ -1,0 +1,18 @@
+.main .acerca-de {
+    text-align: center;
+    .texto {
+        margin: 40px auto 60px auto;
+        width: 80%;
+        font-size: 1em;
+        line-height: 30px;
+        .titulo {
+            font-weight: 300;
+            font-size: 2.125em;
+            color: #e76f51;
+            margin-bottom: 40px;
+        }
+        p {
+            font-weight: 600;
+        }
+    }
+}
