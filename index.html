@@ -65,7 +65,7 @@
 
                     <div class="trabajo">
                         <div class="thumb" onclick="abrirModal('modal1')">
-                            <img src="img/trabajos/1.jpg" alt="">
+                            <img src="img/trabajos/1.jpg" alt="Sistema de bitácoras">
                         </div>
                         <div class="descripcion">
                             <p class="nombre"  onclick="abrirModal('modal1')">Sistema de bitácoras</p>
@@ -81,11 +81,28 @@
                     </div>
 
                     <div class="trabajo">
-                        <div class="thumb">
-                            <img src="img/trabajos/2.jpg" alt="">
+                        <div class="thumb" onclick="abrirModal('modal2')">
+                            <img src="img/trabajos/2.jpg" alt="Sistema de Evaluación y Registro Web">
                         </div>
                         <div class="descripcion">
-                            <p class="nombre">Sistema de Evaluación y Registro</p>
+                            <p class="nombre" onclick="abrirModal('modal2')">Sistema de Evaluación y Registro Web</p>
+                            <p class="categoria">Angular, Bootstrap, Django Rest Framework, MySQL</p>
+                        </div>
+                        <!-- Modal -->
+                        <div id="modal2" class="modal" onclick="cerrarModal('modal2')">
+                            <div class="modal-content">
+                                <span onclick="cerrarModal('modal2')" class="close">&times;</span>
+                                <video src="img/trabajos/2.mp4" controls muted preload="none"></video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trabajo">
+                        <div class="thumb">
+                            <img src="img/trabajos/3.jpg" alt="Sistema de Evaluación y Registro Escritorio">
+                        </div>
+                        <div class="descripcion">
+                            <p class="nombre">Sistema de Evaluación y Registro Escritorio</p>
                             <p class="categoria">Java/NetBeans, MySQL</p>
                         </div>
                     </div>
