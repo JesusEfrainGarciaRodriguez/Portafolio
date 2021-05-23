@@ -189,6 +189,10 @@ header .banner .foto, header .banner img {
   text-decoration: underline;
 }
 
+.main .trabajos .contenedor__trabajos .trabajo .descripcion a {
+  text-decoration: none;
+}
+
 .main .trabajos .contenedor__trabajos .trabajo .descripcion .categoria {
   font-size: 0.9em;
   color: #636363;
