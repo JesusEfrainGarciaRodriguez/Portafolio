@@ -18,6 +18,10 @@ body {
   overflow: hidden;
 }
 
+.hide {
+  display: none;
+}
+
 header {
   background: url("../img/bg.jpg") #e9606a;
   background-position: center;
@@ -200,7 +204,6 @@ header .banner .foto, header .banner img {
 
 /* Modal */
 .modal {
-  display: none;
   position: fixed;
   z-index: 1;
   left: 0;

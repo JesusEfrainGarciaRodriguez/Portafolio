@@ -64,34 +64,34 @@
                 <div class="contenedor__trabajos">
 
                     <div class="trabajo">
-                        <div class="thumb" onclick="abrirModal('modal1')" class="">
-                            <img src="img/trabajos/1.jpg" alt="Sistema de bitácoras">
+                        <div class="thumb" data-target="modal1">
+                            <img src="img/trabajos/1.jpg" alt="Sistema de bitácoras" >
                         </div>
                         <div class="descripcion">
-                            <p class="nombre"  onclick="abrirModal('modal1')">Sistema de bitácoras</p>
+                            <p class="nombre" data-target="modal1">Sistema de bitácoras</p>
                             <p class="categoria">HTML5, CSS3, Bootstrap, JavaScript, Flask, MySQL</p>
                         </div>
-                        <!-- Modal -->
-                        <div id="modal1" class="modal animated fadeIn fast" onclick="cerrarModal('modal1')">
+                        <!-- Modal trabajo1-->
+                        <div id="modal1" class="modal hide animated fadeIn fast" >
                             <div class="modal-content">
-                                <span onclick="cerrarModal('modal1')" class="close">&times;</span>
+                                <span data-target="modal1" class="close">&times;</span>
                                 <video src="img/trabajos/1.mp4" controls muted preload="none"></video>
                             </div>
                         </div>
                     </div>
 
                     <div class="trabajo">
-                        <div class="thumb" onclick="abrirModal('modal2')">
+                        <div class="thumb" data-target="modal2">
                             <img src="img/trabajos/2.jpg" alt="Sistema de Evaluación y Registro Web">
                         </div>
                         <div class="descripcion">
-                            <p class="nombre" onclick="abrirModal('modal2')">Sistema de Evaluación y Registro Web</p>
+                            <p class="nombre" data-target="modal2">Sistema de Evaluación y Registro Web</p>
                             <p class="categoria">Angular, Bootstrap, Django Rest Framework, MySQL</p>
                         </div>
-                        <!-- Modal -->
-                        <div id="modal2" class="modal animated fadeIn fast" onclick="cerrarModal('modal2')">
+                        <!-- Modal trabajo2-->
+                        <div id="modal2" class="modal hide animated fadeIn fast" >
                             <div class="modal-content">
-                                <span onclick="cerrarModal('modal2')" class="close">&times;</span>
+                                <span class="close" data-target="modal2">&times;</span>
                                 <video src="img/trabajos/2.mp4" controls muted preload="none"></video>
                             </div>
                         </div>
