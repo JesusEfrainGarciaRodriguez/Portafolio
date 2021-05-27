@@ -20,9 +20,10 @@ def enviar_correo():
     if(request.method == 'POST'):
         nombre = request.form['nombre']
         correo = request.form['correo']
+        asunto = request.form['asunto']
         msg = request.form['mensaje']
 
-        message = Message('Mensaje de portafolio', sender='portafolio.email@gmail.com',
+        message = Message(asunto, sender='portafolio.email@gmail.com',
               recipients=["efraingarcia_86@hotmail.com"])
 
         message.body = """Mensaje de: %s, con el correo: %s.\n\n%s""" % (nombre, correo, msg,)
