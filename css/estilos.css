@@ -336,7 +336,6 @@ header .banner .foto, header .banner img {
   background-color: white;
   font-size: 1.25em;
   outline: none;
-  line-height: 0;
 }
 
 .main .contacto .formulario input[type="text"]:focus, .main .contacto .formulario input[type="email"]:focus, .main .contacto .formulario textarea:focus {
