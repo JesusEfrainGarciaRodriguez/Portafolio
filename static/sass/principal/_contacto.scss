@@ -18,14 +18,17 @@
             padding: 15px 20px;
             background-color: white;
             font-size: 1.25em;
+            margin-bottom: 20px;
             &:focus {
                 border: 2px solid #e63946;
                 outline: none;
             }
         }
-        input[type="text"], input[type="email"] {
+        #nombre, #correo {
             width: 49%;
-            margin-bottom: 20px;
+        }
+        #asunto {
+            width: 100%;
         }
         textarea {
             width: 100%;

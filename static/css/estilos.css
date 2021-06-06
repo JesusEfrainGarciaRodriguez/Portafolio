@@ -335,6 +335,7 @@ header .banner .foto, header .banner img {
   padding: 15px 20px;
   background-color: white;
   font-size: 1.25em;
+  margin-bottom: 20px;
 }
 
 .main .contacto .formulario input[type="text"]:focus, .main .contacto .formulario input[type="email"]:focus, .main .contacto .formulario textarea:focus {
@@ -342,9 +343,12 @@ header .banner .foto, header .banner img {
   outline: none;
 }
 
-.main .contacto .formulario input[type="text"], .main .contacto .formulario input[type="email"] {
+.main .contacto .formulario #nombre, .main .contacto .formulario #correo {
   width: 49%;
-  margin-bottom: 20px;
+}
+
+.main .contacto .formulario #asunto {
+  width: 100%;
 }
 
 .main .contacto .formulario textarea {

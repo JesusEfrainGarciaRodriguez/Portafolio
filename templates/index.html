@@ -35,7 +35,7 @@
                 <div class="contenedor__texto">
                     <div class="texto">
                         <h1 class="nombre">Efrain Garcia</h1>
-                        <h2 class="profesion">Desarrollador Jr Full-Stack</h2>
+                        <h2 class="profesion">Desarrollador Jr Frontend</h2>
                     </div>
                 </div>
 
@@ -229,8 +229,9 @@
             <div class="contenedor">
                 <h2 class="titulo">Contacto</h2>
                 <form class="formulario" method="POST" action="{{url_for('enviar_correo')}}">
-                    <input type="text" placeholder="Nombre" name="nombre" required>
-                    <input type="email" placeholder="Correo" name="correo" required>
+                    <input id="nombre" type="text" placeholder="Nombre" name="nombre" required>
+                    <input id="correo" type="email" placeholder="Correo" name="correo" required>
+                    <input id="asunto" type="text" placeholder="Asunto" name="asunto" required>
                     <textarea placeholder="Mensaje:" name="mensaje" required></textarea>
                     <input type="submit" value="Enviar">
                 </form>
