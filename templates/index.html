@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Efrain Garcia</title>
-    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.png')}}">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- css -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css')}}">
 </head>
 <body>
     
@@ -29,13 +29,13 @@
             <div class="banner">
 
                 <div class="foto">
-                    <img src="img/foto.jpeg" width="115" height="115" alt="Efrain Garcia">
+                    <img src="{{ url_for('static', filename='img/foto.jpeg')}}" width="115" height="115" alt="Efrain Garcia">
                 </div>
 
                 <div class="contenedor__texto">
                     <div class="texto">
                         <h1 class="nombre">Efrain Garcia</h1>
-                        <h2 class="profesion">Desarrollador Jr Full-Stack</h2>
+                        <h2 class="profesion">Desarrollador Jr Frontend</h2>
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@
 
                     <div class="trabajo">
                         <div class="thumb" data-target="modal1">
-                            <img src="img/trabajos/1.jpg" alt="Sistema de bitácoras" >
+                            <img src="{{ url_for('static', filename='img/trabajos/1.jpg')}}" alt="Sistema de bitácoras" >
                         </div>
                         <div class="descripcion">
                             <p class="nombre" data-target="modal1">Sistema de bitácoras</p>
@@ -75,14 +75,14 @@
                         <div id="modal1" class="modal hide animated fadeIn fast" >
                             <div class="modal-content">
                                 <span data-target="modal1" class="close">&times;</span>
-                                <video src="img/trabajos/1.mp4" controls muted preload="none"></video>
+                                <video src="{{ url_for('static', filename='img/trabajos/1.mp4')}}" controls muted preload="none"></video>
                             </div>
                         </div>
                     </div>
 
                     <div class="trabajo">
                         <div class="thumb" data-target="modal2">
-                            <img src="img/trabajos/2.jpg" alt="Sistema de Evaluación y Registro Web">
+                            <img src="{{ url_for('static', filename='img/trabajos/2.jpg')}}" alt="Sistema de Evaluación y Registro Web">
                         </div>
                         <div class="descripcion">
                             <p class="nombre" data-target="modal2">Sistema de Evaluación y Registro Web</p>
@@ -92,7 +92,7 @@
                         <div id="modal2" class="modal hide animated fadeIn fast" >
                             <div class="modal-content">
                                 <span class="close" data-target="modal2">&times;</span>
-                                <video src="img/trabajos/2.mp4" controls muted preload="none"></video>
+                                <video src="{{ url_for('static', filename='img/trabajos/2.mp4')}}" controls muted preload="none"></video>
                             </div>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                     <div class="trabajo">
                         <div class="thumb">
                             <a href="https://jesusefraingarciarodriguez.github.io/Restaurante/">
-                                <img src="img/trabajos/4.jpg" alt="Restaurante">
+                                <img src="{{ url_for('static', filename='img/trabajos/4.jpg')}}" alt="Restaurante">
                             </a>
                         </div>
                         <div class="descripcion">
@@ -113,7 +113,7 @@
 
                     <div class="trabajo">
                         <div class="thumb">
-                            <img src="img/trabajos/3.jpg" alt="Sistema de Evaluación y Registro Escritorio">
+                            <img src="{{ url_for('static', filename='img/trabajos/3.jpg')}}" alt="Sistema de Evaluación y Registro Escritorio">
                         </div>
                         <div class="descripcion">
                             <p class="nombre">Sistema de Evaluación y Registro Escritorio</p>
@@ -132,7 +132,7 @@
                 <div class="contenedor__tecnologias">
                     <div class="tecnologia">
                         <div class="thumb">
-                            <img src="img/tecnologias/python.svg" alt="python">
+                            <img src="{{ url_for('static', filename='img/tecnologias/python.svg')}}" alt="python">
                         </div>
                         <div class="nombre">
                             <p>Python</p>
@@ -141,7 +141,7 @@
 
                     <div class="tecnologia">
                         <div class="thumb">
-                            <img src="img/tecnologias/java.svg" alt="java">
+                            <img src="{{ url_for('static', filename='img/tecnologias/java.svg')}}" alt="java">
                         </div>
                         <div class="nombre">
                             <p>Java</p>
@@ -150,7 +150,7 @@
 
                     <div class="tecnologia">
                         <div class="thumb">
-                            <img src="img/tecnologias/html.svg" alt="html">
+                            <img src="{{ url_for('static', filename='img/tecnologias/html.svg')}}" alt="html">
                         </div>
                         <div class="nombre">
                             <p>HTML</p>
@@ -159,7 +159,7 @@
 
                     <div class="tecnologia">
                         <div class="thumb">
-                            <img src="img/tecnologias/css.svg" alt="css">
+                            <img src="{{ url_for('static', filename='img/tecnologias/css.svg')}}" alt="css">
                         </div>
                         <div class="nombre">
                             <p>CSS</p>
@@ -168,7 +168,7 @@
 
                     <div class="tecnologia">
                         <div class="thumb">
-                            <img src="img/tecnologias/sass.svg" alt="sass">
+                            <img src="{{ url_for('static', filename='img/tecnologias/sass.svg')}}" alt="sass">
                         </div>
                         <div class="nombre">
                             <p>Sass</p>
@@ -177,7 +177,7 @@
 
                     <div class="tecnologia">
                         <div class="thumb">
-                            <img src="img/tecnologias/javascript.svg" alt="javascript">
+                            <img src="{{ url_for('static', filename='img/tecnologias/javascript.svg')}}" alt="javascript">
                         </div>
                         <div class="nombre">
                             <p>JavaScript</p>
@@ -186,7 +186,7 @@
 
                     <div class="tecnologia">
                         <div class="thumb">
-                            <img src="img/tecnologias/mysql.svg" alt="mysql">
+                            <img src="{{ url_for('static', filename='img/tecnologias/mysql.svg')}}" alt="mysql">
                         </div>
                         <div class="nombre">
                             <p>MySQL</p>
@@ -195,7 +195,7 @@
 
                     <div class="tecnologia">
                         <div class="thumb">
-                            <img src="img/tecnologias/django.svg" alt="django">
+                            <img src="{{ url_for('static', filename='img/tecnologias/django.svg')}}" alt="django">
                         </div>
                         <div class="nombre">
                             <p>Django / Django Rest Framework</p>
@@ -204,7 +204,7 @@
 
                     <div class="tecnologia">
                         <div class="thumb">
-                            <img src="img/tecnologias/bootstrap.svg" alt="bootstrap">
+                            <img src="{{ url_for('static', filename='img/tecnologias/bootstrap.svg')}}" alt="bootstrap">
                         </div>
                         <div class="nombre">
                             <p>Bootstrap</p>
@@ -213,7 +213,7 @@
 
                     <div class="tecnologia">
                         <div class="thumb">
-                            <img src="img/tecnologias/git.svg" alt="git">
+                            <img src="{{ url_for('static', filename='img/tecnologias/git.svg')}}" alt="git">
                         </div>
                         <div class="nombre">
                             <p>Git / GitHub</p>
@@ -228,10 +228,11 @@
         <section class="contacto" id="contacto">
             <div class="contenedor">
                 <h2 class="titulo">Contacto</h2>
-                <form class="formulario">
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="email" placeholder="Correo" required>
-                    <textarea placeholder="Mensaje:" required></textarea>
+                <form class="formulario" method="POST" action="{{url_for('enviar_correo')}}">
+                    <input id="nombre" type="text" placeholder="Nombre" name="nombre" required>
+                    <input id="correo" type="email" placeholder="Correo" name="correo" required>
+                    <input id="asunto" type="text" placeholder="Asunto" name="asunto" required>
+                    <textarea placeholder="Mensaje:" name="mensaje" required></textarea>
                     <input type="submit" value="Enviar">
                 </form>
             </div>
@@ -254,6 +255,6 @@
         </div>
     </footer>
 
-    <script src="js/scripts.js"></script>
+    <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
 </body>
 </html>
